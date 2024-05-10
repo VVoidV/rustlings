@@ -6,12 +6,13 @@
 // Execute `rustlings hint tests2` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
-
 #[cfg(test)]
 mod tests {
+    use std::ascii::AsciiExt;
+
     #[test]
     fn you_can_assert_eq() {
-        assert_eq!();
+        assert_eq!("5",5.to_string());
+        assert_eq!(0_i32.to_be(),0_i32.to_le());
     }
 }
